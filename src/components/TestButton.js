@@ -3,8 +3,8 @@ import "./TestButton.css"
 
 const TestButton = ({number}) => {
     return (
-        <div className="test-button">
-            <h2>{number}</h2>
+        <div className="test-button">         
+            <a href={`http://numbersapi.com/#${number}`}>{number}</a>
         </div>
     );
 }
