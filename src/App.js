@@ -8,19 +8,23 @@ class App extends Component {
       <div>
         
         <h1 className='header'>NUMBER FACTS</h1>
-        <h2 className='main-text'> _________________________________________________________________ </h2>
+        <h2 className='main-text output'>waiting for number input....</h2>
 
         <div className='main-body'>
           <h2 className='main-text'>EXAMPLE NUMBERS:</h2>
-          <TestButton number={"1"}/>
-          <TestButton number={"2"}/>
-          <TestButton number={"3"}/>
-          <TestButton number={"4"}/>
-          <TestButton number={"5"}/>
+          <div className='buttons' align="center">
+            <TestButton number={"1"}/>
+            <TestButton number={"2"}/>
+            <TestButton number={"3"}/>
+            <TestButton number={"4"}/>
+            <TestButton number={"5"}/>
+          </div>
 
-          <h3 className='main-text'>TRY ANY NUMER!</h3>
 
-          <input type="number" id="number-to-proccess" name="number-to-process" min="0" max="9999" />
+          <div class="custom-field" align="center">
+            <h3 className='main-text'>TRY ANY NUMBER!</h3>
+            <input type="number" min="0" max="9999" />
+          </div>
 
         </div>
 

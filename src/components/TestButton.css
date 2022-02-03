@@ -1,14 +1,18 @@
+a {
+    text-decoration: none;
+}
 .test-button {
     display: inline-block;
 
-    padding: 0px 120px 0px 120px;
+    padding: 20px 60px;
     margin: 50px 50px;
-    border: 1px solid #9299D4;
     background-color: #9299D4;
-    border-radius: 40%;
+    border-radius: 100px;
 }
 
-.test-button > h2 {
+.test-button > a {
     color: #f2f2f2;
     font-size: 96px;
 }
+
+
