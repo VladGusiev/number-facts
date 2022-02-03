@@ -20,7 +20,7 @@ body {
 
 /*All text except header (top one)*/
 .main-text {
-    font-size: 60px;
+    font-size: 40px;
     margin-top: 20px;
     width: 90%;
 }
@@ -62,11 +62,12 @@ body {
     font-size: 60px;
 }
 
+/*for smaller pc screens*/
 @media only screen and (max-width: 1050px){
     .header {
-        font-size: 36px;
+        font-size: 26px;
     }
     .main-text {
-        font-size: 28px;
+        font-size: 18px;
     }
 }
