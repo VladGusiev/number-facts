@@ -10,20 +10,25 @@ class App extends Component {
     }
   }
 
+
+  //inital random fact
   componentDidMount() {
     fetch("http://numbersapi.com/random?json")
         .then(response => response.json())
         .then(data => this.setState({searchfield: data.text}));
   }
   
+
+  //for searchbar functionality
   onSearchChange = (event) => {
     fetch(`http://numbersapi.com/${event.target.value}?json`)
         .then(response => response.json())
         .then(data => this.setState({searchfield: data.text}));
   }
 
+  //for buttons functionality
   onClickChange = (event) => {
-    fetch(`http://numbersapi.com/${event.target.textContent}?json`)
+    fetch(`http://numbersapi.com/${event.target.value}?json`)
         .then(response => response.json())
         .then(data => this.setState({searchfield: data.text}));
   }
@@ -41,13 +46,12 @@ class App extends Component {
         <div className='main-body'>
           <h2 className='main-text'>EXAMPLE NUMBERS:</h2>
           <div className='buttons' align="center">
-            <TestButton onClick={this.onClickChange} number={"1"}/>
-            <TestButton onClick={this.onClickChange} number={"2"}/>
-            <TestButton  number={"3"}/>
-            <TestButton  number={"4"}/>
-            <TestButton  number={"5"}/>
+            <TestButton onClickChange={this.onClickChange} number={"1"}/>
+            <TestButton onClickChange={this.onClickChange} number={"2"}/>
+            <TestButton onClickChange={this.onClickChange} number={"3"}/>
+            <TestButton onClickChange={this.onClickChange} number={"4"}/>
+            <TestButton onClickChange={this.onClickChange} number={"5"}/>
           </div>
-
 
           <div className="custom-field" align="center">
             <h3 className='main-text'>TRY ANY NUMBER!</h3>
