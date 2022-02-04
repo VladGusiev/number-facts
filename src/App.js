@@ -51,6 +51,7 @@ class App extends Component {
             <TestButton onClickChange={this.onClickChange} number={"3"}/>
             <TestButton onClickChange={this.onClickChange} number={"4"}/>
             <TestButton onClickChange={this.onClickChange} number={"5"}/>
+            <TestButton onClickChange={this.onClickChange} number={"random"}/>
           </div>
 
           <div className="custom-field" align="center">
