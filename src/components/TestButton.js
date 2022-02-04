@@ -1,11 +1,11 @@
 import React from "react";
 import "./TestButton.css"
 
-const TestButton = ({number}) => {
+
+
+const TestButton = ({number, onClickChange}) => {
     return (
-        <div className="test-button">         
-            <a href={`http://numbersapi.com/#${number}`}>{number}</a>
-        </div>
+        <button value={number} onClick={onClickChange}>{number}</button>
     );
 }
 
